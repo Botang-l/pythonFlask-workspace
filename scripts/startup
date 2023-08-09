@@ -1,0 +1,34 @@
+#!/bin/bash
+
+cat <<EOF
+
+    Welcome to use the ITH docker workspace.
+
+    Please clone all your ITH repositories into '~/projects/' to keep them after the container closed.
+    Use \`docker exec -it ${HOSTNAME} bash\` to connect to the container,
+    or alternatively use \`ssh -p ${EXPOSE_SSH_PORT} ${USER}@127.0.0.1\` to login via SSH.
+
+    Network port mapping (host : container):
+        SSH server  -> ${EXPOSE_SSH_PORT} : 22
+        Reserved #1 -> ${EXPOSE_DEV_PORT_1} : 5000
+        Reserved #2 -> ${EXPOSE_DEV_PORT_2} : 5001
+
+    The following are some useful commands for this environment.
+
+    [ Container ]
+        startup     : Show this message.
+        ssh-keygen  : Generate SSH private & public key.
+        exit        : Leave the container.
+
+    [ Python virtual environment ]
+        virtualenv venv             : Create a Python virtual environment in the current directory.
+        source venv/bin/activate    : Activate a Python virtual environment.
+        pip3 install -r <FILE>      : Install Python packages with a specified file. Only use it when venv is activated.
+        pip3 list                   : Show installed Python packages in the current configuration.
+        deactivate                  : Leave the current Python virtual environment.
+
+    [ Ngrok ]
+        ngrok config add-authtoken <TOKEN>  : Add a ngrok authtoken.
+        ngrok http <PORT>                   : Start a ngrok tunnel.
+
+EOF

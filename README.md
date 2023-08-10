@@ -1,5 +1,5 @@
-# ITH Docker Workspace
-Docker development environment for the ITH projects based on Ubuntu 20.04 with SSH server and Ngrok installed.
+# python Flask Docker Workspace
+Docker development environment for the flask projects based on Ubuntu 20.04 with SSH server and Ngrok installed.
 
 ## Table of Contents <!-- omit in toc -->
 - [Usage](#usage)
@@ -10,7 +10,7 @@ Docker development environment for the ITH projects based on Ubuntu 20.04 with S
 - [File structure](#file-structure)
 
 ## Usage
-[ITH Workspace 操作說明 - CodiMD](https://playlab.computing.ncku.edu.tw:3001/3IiJDt-5Ri6pgIIAkoVgvw)
+[ITH Workspace 操作說明(目前不可用)](https://playlab.computing.ncku.edu.tw:3001/3IiJDt-5Ri6pgIIAkoVgvw)
 
 ### Show useful commands (inside the environment)
 ```shell
